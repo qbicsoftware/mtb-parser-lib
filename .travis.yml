@@ -5,7 +5,14 @@ python:
   - "3.5"
   - "3.6"
 
-script: nosetests
+install:
+  - pip install codecov
+
+script: 
+  - nosetests --with-coverage
+
+after_success:
+  - codecov
 
 # safelist
 branches:
