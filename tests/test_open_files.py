@@ -18,6 +18,8 @@ test_empty_file_loc = os.path.join(current_wd, "testfiles/ex_empty_file.tsv")
 test_loaded_file_loc = os.path.join(current_wd, "testfiles/ex_somatic_snvs_loaded.tsv")
 # A corrupted SNV file
 test_corrupted_file_loc = os.path.join(current_wd, "testfiles/ex_somatic_snvs_loaded_corrupt.tsv")
+# A SNV file with a truncated header
+test_truncated_header_loc = os.path.join(current_wd, "testfiles/ex_somatic_snvs_trunc_header.tsv")
 
 class BasicTests(unittest.TestCase):
 
@@ -51,3 +53,6 @@ class BasicTests(unittest.TestCase):
     def test_parse_corrupted_snv_file(self):
         snv_list = snv_list = SnvParser(test_corrupted_file_loc).getSNVs()
 
+    @raises(MTBParserException)
+    def test_parse_truncated_header(self):
+        SnvParser(test_truncated_header_loc)
