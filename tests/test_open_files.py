@@ -14,6 +14,8 @@ test_file_loc = os.path.join(current_wd, "testfiles/ex_somatic_snvs.tsv")
 test_wrong_file_loc = os.path.join(current_wd, "testfiles/not_present.tsv")
 # An empty file
 test_empty_file_loc = os.path.join(current_wd, "testfiles/ex_empty_file.tsv")
+# A loaded SNV file
+test_loaded_file_loc = os.path.join(current_wd, "testfiles/ex_somatic_snvs_loaded.tsv")
 
 class BasicTests(unittest.TestCase):
 
@@ -34,3 +36,11 @@ class BasicTests(unittest.TestCase):
 
     def test_parse_header_from_file(self):
         SnvParser(test_file_loc)
+
+    def test_parse_content_empty(self):
+        snv_list = SnvParser(test_file_loc).getSNVs()
+        assert not snv_list, "List was not empty but %r" % len(snv_list)
+    
+    def test_parse_loaded_snv_file(self):
+        snv_list = SnvParser(test_loaded_file_loc).getSNVs()
+        assert len(snv_list) == 2, "Expected number of SNV elements was 2, but found %r" % len(snv_list)
