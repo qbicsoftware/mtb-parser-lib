@@ -1,2 +1,2 @@
-# qbic-centraxx-mtb-wf
-A simple workflow for diagnostic variant information parsing and transfer to CentraXX
+# qbic-mtbparser
+A simple module that provides parser for different diagnostic variant information as part of the Molecular Tumor Board data provisioning in Tübingen.
