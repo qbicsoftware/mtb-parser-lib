@@ -84,7 +84,7 @@ The read coverage mapped at this position.
 ---
 
 ### 'aa_change'
-[HGVS](http://varnomen.hgvs.org/recommendations/DNA/) formatted amino acid change.
+[HGVS](http://varnomen.hgvs.org/recommendations/protein/) formatted amino acid change.
 
 **Example**
 
@@ -92,11 +92,38 @@ The read coverage mapped at this position.
 
 ---
 
-
 ### 'transcript'
+Transcript reference identifier. Refseq or Ensembl.
+
+**Example**
+
+``transcript: NM_001143990.1``
+
+---
 
 ### 'functional\_class'
+The functional class of the variant in Sequence Onthology terms.
+
+**Example**
+
+``functional_class: intron_variant``
+
+---
 
 ### 'effect'
+The predicted or annotated effect of the variant. Currently an enumeration of:
 
+* activating
+* inactivating
+* function_changed
+* probably\_activating
+* probably\_inactivating
+* probably\_function\_change
+* ambigious
+* benign
+* NA
+
+**Example**
+
+``effect: activating``
 
