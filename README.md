@@ -8,9 +8,21 @@ A simple module that provides parser for different diagnostic variant informatio
 ## The SnvParser class
 This class parses a SNV file (tsv format!) of the following specified format. Be aware that each of the following listings represent a **tab-separated** column field in the input SNV file:
 
+* [chr](#chr)
+* start
+* ref
+* alt
+* allele\_frequency\_tumor
+* coverage
+* base_change
+* aa_change
+* transcript
+* functional\_class
+* effect
+
 ---
 
-### 'chr'
+### <a name="chr"></a>'chr'
 The chromosome location of the variant.
 
 **Example**
