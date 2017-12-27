@@ -16,3 +16,6 @@ File formats for
 
 Python class info
 * SNVParser
+
+## Author
+This code implementation was done at the [Quantitative Biology Center](http://qbic.life). Please contact the author @sven1103 for more information.
