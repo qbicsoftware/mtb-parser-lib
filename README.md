@@ -7,7 +7,7 @@ A simple module that provides parser for different diagnostic variant informatio
 ## Documentation
 
 File formats for
-* [Somatic SNVs](.docs/somatic_snvs.md)
+* [Somatic SNVs](./docs/somatic_snvs.md)
 * Somatic CNVs
 * Somatic structural variants
 * Germline SNVs
@@ -18,4 +18,4 @@ Python class info
 * SNVParser
 
 ## Author
-This code implementation was done at the [Quantitative Biology Center](http://qbic.life). Please contact the author @sven1103 for more information.
+This code implementation was done at the [Quantitative Biology Center](http://qbic.life). Please contact the author [@sven1103](https://github.com/sven1103) for more information.
