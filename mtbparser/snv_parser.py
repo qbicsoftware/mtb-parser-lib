@@ -1,6 +1,6 @@
 from .mtbparser_exception import MTBParserException
-from enum import Enum
 from .snv_item import SNVItem
+from .snv_utils import SnvHeader
 
 class SnvParser:
     """
@@ -56,29 +56,22 @@ class SnvParser:
         if len(snv_entries) == 1:
             return
         for line in snv_entries[1:]:
-            self._snv_list.append(SNVItem(**self._header_to_column_mapping))
+            info_dict = self._map_info_to_col(line)
+            self._snv_list.append(SNVItem(**info_dict))
+    
+    def _map_info_to_col(self, line):
+        line_content = line.strip().split("\t")
+        tmp_info_dict = {}
+        try:
+            for column, index in self._header_to_column_mapping.items():
+                tmp_info_dict[column] = line_content[index]
+        except IndexError:
+            raise MTBParserException("Parsing of an SNV element failed, because the "
+                        "value for {} could not be determined.")
+        return tmp_info_dict
 
     def getSNVs(self):
         """
         Retrieve all parsed SNVItems.
         """
         return self._snv_list
-
-class SnvHeader(Enum):
-    """
-    Enumeration class for the different column types
-    specified in the header of the SNV tsv file.
-    """
-    CHR = "chr"
-    START = "start"
-    REF = "ref"
-    ALT = "alt"
-    ALLELE_F_TUMOR = "allele_frequency_tumor"
-    COVERAGE = "coverage"
-    GENE = "gene"
-    BASE_CHANGE = "base_change"
-    AA_CHANGE = "aa_change"
-    TRANSCRIPT = "transcript"
-    FUN_CLASS = "functional_class"
-    EFFECT = "effect"
-    HEADER_LEN = 12

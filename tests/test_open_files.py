@@ -16,6 +16,8 @@ test_wrong_file_loc = os.path.join(current_wd, "testfiles/not_present.tsv")
 test_empty_file_loc = os.path.join(current_wd, "testfiles/ex_empty_file.tsv")
 # A loaded SNV file
 test_loaded_file_loc = os.path.join(current_wd, "testfiles/ex_somatic_snvs_loaded.tsv")
+# A corrupted SNV file
+test_corrupted_file_loc = os.path.join(current_wd, "testfiles/ex_somatic_snvs_loaded_corrupt.tsv")
 
 class BasicTests(unittest.TestCase):
 
@@ -44,3 +46,8 @@ class BasicTests(unittest.TestCase):
     def test_parse_loaded_snv_file(self):
         snv_list = SnvParser(test_loaded_file_loc).getSNVs()
         assert len(snv_list) == 2, "Expected number of SNV elements was 2, but found %r" % len(snv_list)
+
+    @raises(MTBParserException)
+    def test_parse_corrupted_snv_file(self):
+        snv_list = snv_list = SnvParser(test_corrupted_file_loc).getSNVs()
+
