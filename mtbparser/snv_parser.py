@@ -12,10 +12,13 @@ class SnvParser:
 
     def __init__(self, snv_file):
         self.path_to_snv_file = snv_file
-        try:
-            with open(snv_file, "r") as fh:
-                pass
-        except IOError as err:
-            raise MTBParserException("Parsing failed because SNV file was not accessible.")
-            raise IOError(err)
+        with open(snv_file, "r") as fh:
+            lines = fh.readlines()
+        if not lines:
+            raise MTBParserException("Parsing failed: File was empty!")
+        header = lines[0]
+        self._check_header(header)
 
+
+    def _check_header(self, header_string):
+        pass
