@@ -9,16 +9,16 @@ A simple module that provides parser for different diagnostic variant informatio
 This class parses a SNV file (tsv format!) of the following specified format. Be aware that each of the following listings represent a **tab-separated** column field in the input SNV file:
 
 * [chr](#chr)
-* start
-* ref
-* alt
-* allele\_frequency\_tumor
-* coverage
-* base_change
-* aa_change
-* transcript
-* functional\_class
-* effect
+* [start](#start)
+* [ref](#ref)
+* [alt](#alt)
+* [allele\_frequency\_tumor](#all_f)
+* [coverage](#coverage)
+* [base_change](#base)
+* [aa_change](#aa)
+* [transcript](#transcript)
+* [functional\_class](#fclass)
+* [effect](effect)
 
 ---
 
@@ -31,7 +31,7 @@ The chromosome location of the variant.
 
 ---
 
-### 'start'
+### <a name="start"></a>'start'
 The genomic start position of the variant.
 
 **Example**
@@ -40,7 +40,7 @@ The genomic start position of the variant.
 
 ---
 
-### 'ref'
+### <a name="ref"></a>'ref'
 The reference base at this position.
 
 **Example**
@@ -50,7 +50,7 @@ The reference base at this position.
 
 ---
 
-### 'alt'
+### <a name="alt"></a>'alt'
 The altered base et this position.
 
 **Example**
@@ -59,7 +59,7 @@ The altered base et this position.
 
 ---
 
-### 'allele\_frequency\_tumor'
+### <a name="all_f"></a>'allele\_frequency\_tumor'
 The allele frequence of the variant in the tumor.
 
 **Example**
@@ -68,7 +68,7 @@ The allele frequence of the variant in the tumor.
 
 ---
 
-### 'coverage'
+### <a name="coverage"></a>'coverage'
 The read coverage mapped at this position.
 
 **Example**
@@ -77,7 +77,7 @@ The read coverage mapped at this position.
 
 ---
 
-### 'gene'
+### <a name="gene"></a>'gene'
 [HGNC](https://www.genenames.org) formatted gene name.
 
 **Example**
@@ -86,7 +86,7 @@ The read coverage mapped at this position.
 
 ---
 
-### 'base_change'
+### <a name="base"></a>'base_change'
 [HGVS](http://varnomen.hgvs.org/recommendations/DNA/) formatted base change.
 
 **Example**
@@ -95,7 +95,7 @@ The read coverage mapped at this position.
 
 ---
 
-### 'aa_change'
+### <a name="aa"></a>'aa_change'
 [HGVS](http://varnomen.hgvs.org/recommendations/protein/) formatted amino acid change.
 
 **Example**
@@ -104,7 +104,7 @@ The read coverage mapped at this position.
 
 ---
 
-### 'transcript'
+### <a name="transcript"></a>'transcript'
 Transcript reference identifier. Refseq or Ensembl.
 
 **Example**
@@ -113,7 +113,7 @@ Transcript reference identifier. Refseq or Ensembl.
 
 ---
 
-### 'functional\_class'
+### <a name="fclass"></a>'functional\_class'
 The functional class of the variant in Sequence Onthology terms.
 
 **Example**
@@ -122,7 +122,7 @@ The functional class of the variant in Sequence Onthology terms.
 
 ---
 
-### 'effect'
+### <a name="effect"></a>'effect'
 The predicted or annotated effect of the variant. Currently an enumeration of:
 
 * activating
