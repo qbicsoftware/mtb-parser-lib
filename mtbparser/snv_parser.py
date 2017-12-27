@@ -21,4 +21,9 @@ class SnvParser:
 
 
     def _check_header(self, header_string):
-        pass
+        header_content = header_string.split('\t')
+        if len(header_content) != 12:
+            print(header_content)
+            raise MTBParserException(
+                "Only {} header columns found, 12 expected!"
+                .format(len(header_content)))
