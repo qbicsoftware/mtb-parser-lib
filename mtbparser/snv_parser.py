@@ -31,8 +31,8 @@ class SnvParser:
         header_content = header_string.strip().split('\t')
         if len(header_content) != SnvHeader.HEADER_LEN.value:
             raise MTBParserException(
-                "Only {} header columns found, 12 expected!"
-                .format(len(header_content)))
+                "Only {} header columns found, {} expected!"
+                .format(len(header_content), SnvHeader.HEADER_LEN.value))
         counter = 0
         for column in header_content:
             for enum_type in SnvHeader:
