@@ -1,4 +1,4 @@
-# qbic-mtbparser
+# qbic.mtbparser
 
 [![Build status](https://travis-ci.org/qbicsoftware/qbic-centraxx-mtb-wf.svg?branch=development)](https://travis-ci.org/qbicsoftware/qbic-centraxx-mtb-wf/) [![codecov](https://codecov.io/gh/qbicsoftware/qbic-centraxx-mtb-wf/branch/development/graph/badge.svg)](https://codecov.io/gh/qbicsoftware/qbic-centraxx-mtb-wf)
 
