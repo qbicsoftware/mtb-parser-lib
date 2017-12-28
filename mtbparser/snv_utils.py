@@ -34,3 +34,44 @@ class GSnvHeader(Enum):
     FUN_CLASS = "functional_class"
     EFFECT = "effect"
     HEADER_LEN = 11
+
+class CnvHeader(Enum):
+    """ Enumeration class for the different column types
+    specified in the header of the germline and somatic
+    CNV tsv file.
+    """
+    SIZE = "size"
+    TYPE = "type"
+    COPY_NUMBER = "copy_number"
+    GENE = "gene"
+    EXONS = "exons"
+    TRANSCRIPT = "transcript"
+    CHR = "chr"
+    START = "start"
+    END = "end"
+    EFFECT = "effect"
+    HEADER_LEN = 10
+
+class SsvHeader(Enum):
+    """ Enumeration class for the different column types
+    specified in the header of the somatic structural variants
+    tsv file.
+    """
+    TYPE = "type"
+    GENE = "gene"
+    EFFECT = "effect"
+    LEFT_BP = "left_bp"
+    RIGHT_BP = "right_bp"
+    HEADER_LEN = 5
+
+class MetaData(Enum):
+    """ Enumeration class for the different column types
+    specified in the header of the metadata tsv file.
+    """
+    DIAGNOSIS = "diagnosis"
+    TUMOR_CONTENT = "tumor_contet"
+    PATHOGENIC_GERMLINE = "pathogenic_germline"
+    MUTATIONAL_LOAD = "mutational_load"
+    CHROMOSOMAL_INSTABILITY = "chromosomal_instability"
+    QUALITY_FLAGS = "quality_flags"
+    REFERENCE_GENOME = "reference_genome"
