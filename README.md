@@ -1,6 +1,6 @@
 # qbic.mtbparser
 
-[![Build status](https://travis-ci.org/qbicsoftware/qbic.mtbparser.svg?branch=master)](https://travis-ci.org/master/qbic.mtbparser/) [![codecov](https://codecov.io/gh/qbicsoftware/qbic.mtbparser/branch/master/graph/badge.svg)](https://codecov.io/gh/qbicsoftware/qbic.mtbparser/)
+[![Build status](https://travis-ci.org/qbicsoftware/qbic.mtbparser.svg?branch=master)](https://travis-ci.org/master/qbic.mtbparser/) [![codecov](https://codecov.io/gh/qbicsoftware/qbic.mtbparser/branch/master/graph/badge.svg)](https://codecov.io/gh/qbicsoftware/qbic.mtbparser/) [![GitHub tag](https://img.shields.io/github/release/qbicsoftware/qbic.mtbparser/all.svg)](https://github.com/qbicsoftware/qbic.mtbparser/releases)
 
 A simple module that provides parser for different diagnostic variant information as part of the Molecular Tumor Board data provisioning in Tübingen.
 
