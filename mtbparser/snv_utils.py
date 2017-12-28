@@ -1,6 +1,6 @@
 from enum import Enum
 
-class SnvHeader(Enum):
+class SSnvHeader(Enum):
     """
     Enumeration class for the different column types
     specified in the header of the SNV tsv file.
@@ -18,3 +18,8 @@ class SnvHeader(Enum):
     FUN_CLASS = "functional_class"
     EFFECT = "effect"
     HEADER_LEN = 12
+
+class GSnvHeader(Enum):
+    """
+    dsad
+    """

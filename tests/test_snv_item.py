@@ -5,7 +5,7 @@ Test class suite for SNVItem objects
 import os
 import unittest
 from mtbparser.snv_parser import SnvParser
-from mtbparser.snv_utils import SnvHeader
+from mtbparser.snv_utils import SSnvHeader
 
 CURRENT_WD = os.path.dirname(__file__)
 
@@ -25,7 +25,7 @@ class SnvItemTest(unittest.TestCase):
         snv_list = self._snv_parser_instance.getSNVs()
         assert len(snv_list) == 2, "Expected twoSNV items, but found %r" % len(snv_list)
         snv_example = snv_list[1]
-        snv_gene = snv_example.get_snv_info(SnvHeader.GENE.name)
+        snv_gene = snv_example.get_snv_info(SSnvHeader.GENE.name)
         assert snv_gene == "BCRA1", "Expected gene name BCRA1, but was %r" % snv_gene
 
     def test_access_non_present_attribute(self):

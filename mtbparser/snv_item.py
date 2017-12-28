@@ -1,6 +1,3 @@
-from .snv_utils import SnvHeader
-from .mtbparser_exception import MTBSnvFormatException
-
 class SNVItem():
 
     def __init__(self, **info):

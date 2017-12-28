@@ -1,6 +1,6 @@
 from .mtbparser_exception import MTBParserException
 from .snv_item import SNVItem
-from .snv_utils import SnvHeader
+from .snv_utils import SSnvHeader
 
 class SnvParser:
     """
@@ -29,23 +29,23 @@ class SnvParser:
         and its column index.
         """
         header_content = header_string.strip().split('\t')
-        if len(header_content) != SnvHeader.HEADER_LEN.value:
+        if len(header_content) != SSnvHeader.HEADER_LEN.value:
             raise MTBParserException(
                 "Only {} header columns found, {} expected!"
-                .format(len(header_content), SnvHeader.HEADER_LEN.value))
+                .format(len(header_content), SSnvHeader.HEADER_LEN.value))
         counter = 0
         for column in header_content:
-            for enum_type in SnvHeader:
+            for enum_type in SSnvHeader:
                 if column == enum_type.value:
                     self._header_to_column_mapping[enum_type.name] = counter
                     continue
             counter+=1
 
-        if len(self._header_to_column_mapping) != SnvHeader.HEADER_LEN.value:
+        if len(self._header_to_column_mapping) != SSnvHeader.HEADER_LEN.value:
             debug_string = self._header_to_column_mapping.keys()
             raise MTBParserException("Parsing incomplete: Not all columns have been "
                     "matched to speficied column types. Identified {} columns, but expected {}. {}"
-                    .format(len(self._header_to_column_mapping), SnvHeader.HEADER_LEN.value, debug_string))
+                    .format(len(self._header_to_column_mapping), SSnvHeader.HEADER_LEN.value, debug_string))
 
     def _parse_content(self, snv_entries):
         """
