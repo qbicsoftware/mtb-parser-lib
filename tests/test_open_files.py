@@ -13,7 +13,7 @@ test_file_loc = os.path.join(current_wd, "testfiles/somatic_snvs/ex_somatic_snvs
 # A none existing path
 test_wrong_file_loc = os.path.join(current_wd, "testfiles/somatic_snvs/not_present.tsv")
 # An empty file
-test_empty_file_loc = os.path.join(current_wd, "testfiles/somatic_snvs/ex_empty_file.tsv")
+test_empty_file_loc = os.path.join(current_wd, "testfiles/ex_empty_file.tsv")
 # A loaded SNV file
 test_loaded_file_loc = os.path.join(current_wd, "testfiles/somatic_snvs/ex_somatic_snvs_loaded.tsv")
 # A corrupted SNV file
