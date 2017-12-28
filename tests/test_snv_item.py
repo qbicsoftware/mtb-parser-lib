@@ -17,7 +17,7 @@ class SnvItemTest(unittest.TestCase):
     Sets up different test cases for the SNVItem class
     """
     def setUp(self):
-        self._snv_parser_instance = SnvParser(TEST_LOADED_FILE_LOC)
+        self._snv_parser_instance = SnvParser(TEST_LOADED_FILE_LOC, SSnvHeader)
         self._snv_item = self._snv_parser_instance.getSNVs()[1]
 
     def test_retrieve_attribute_from_snv(self):

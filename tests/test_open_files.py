@@ -3,6 +3,7 @@ import unittest
 from nose.tools import raises
 from mtbparser.snv_parser import SnvParser
 from mtbparser.mtbparser_exception import MTBParserException
+from mtbparser.snv_utils import SSnvHeader
 
 current_wd = os.path.dirname(__file__)
 
@@ -25,34 +26,34 @@ class BasicTests(unittest.TestCase):
 
     @raises(IOError)
     def test_try_to_read_from_none_existing_file(self):
-        SnvParser(test_wrong_file_loc)
+        SnvParser(test_wrong_file_loc, SSnvHeader)
 
     def test_try_to_read_from_existing_file(self):
-        SnvParser(test_file_loc)
+        SnvParser(test_file_loc, SSnvHeader)
 
     @raises(MTBParserException)
     def test_read_from_empty_file(self):
-        SnvParser(test_empty_file_loc)
+        SnvParser(test_empty_file_loc, SSnvHeader)
 
     @raises(MTBParserException)
     def test_parse_header_from_corrupted_file(self):
-        SnvParser(test_wrong_header_file_loc)
+        SnvParser(test_wrong_header_file_loc, SSnvHeader)
 
     def test_parse_header_from_file(self):
-        SnvParser(test_file_loc)
+        SnvParser(test_file_loc, SSnvHeader)
 
     def test_parse_content_empty(self):
-        snv_list = SnvParser(test_file_loc).getSNVs()
+        snv_list = SnvParser(test_file_loc, SSnvHeader).getSNVs()
         assert not snv_list, "List was not empty but %r" % len(snv_list)
     
     def test_parse_loaded_snv_file(self):
-        snv_list = SnvParser(test_loaded_file_loc).getSNVs()
+        snv_list = SnvParser(test_loaded_file_loc, SSnvHeader).getSNVs()
         assert len(snv_list) == 2, "Expected number of SNV elements was 2, but found %r" % len(snv_list)
 
     @raises(MTBParserException)
     def test_parse_corrupted_snv_file(self):
-        snv_list = snv_list = SnvParser(test_corrupted_file_loc).getSNVs()
+        snv_list = snv_list = SnvParser(test_corrupted_file_loc, SSnvHeader).getSNVs()
 
     @raises(MTBParserException)
     def test_parse_truncated_header(self):
-        SnvParser(test_truncated_header_loc)
+        SnvParser(test_truncated_header_loc, SSnvHeader)
