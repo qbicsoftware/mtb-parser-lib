@@ -1,3 +1,7 @@
+"""
+Collection of different header types, specified
+as enums.
+"""
 from enum import Enum
 
 class SSnvHeader(Enum):
@@ -75,3 +79,4 @@ class MetaData(Enum):
     CHROMOSOMAL_INSTABILITY = "chromosomal_instability"
     QUALITY_FLAGS = "quality_flags"
     REFERENCE_GENOME = "reference_genome"
+    HEADER_LEN = 7
