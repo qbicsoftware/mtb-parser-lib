@@ -67,7 +67,7 @@ class SnvParser:
                 tmp_info_dict[column] = line_content[index]
         except IndexError:
             raise MTBParserException("Parsing of an SNV element failed, because the "
-                        "value for {} could not be determined.")
+                        "value for {} could not be determined.".format(column))
         return tmp_info_dict
 
     def getSNVs(self):
