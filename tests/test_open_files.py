@@ -7,19 +7,19 @@ from mtbparser.mtbparser_exception import MTBParserException
 current_wd = os.path.dirname(__file__)
 
 # A SNV tsv with a wrong header
-test_wrong_header_file_loc = os.path.join(current_wd, "testfiles/ex_somatic_snvs_wrong_header.tsv")
+test_wrong_header_file_loc = os.path.join(current_wd, "testfiles/somatic_snvs/ex_somatic_snvs_wrong_header.tsv")
 # A working SNV tsv file
-test_file_loc = os.path.join(current_wd, "testfiles/ex_somatic_snvs.tsv")
+test_file_loc = os.path.join(current_wd, "testfiles/somatic_snvs/ex_somatic_snvs.tsv")
 # A none existing path
-test_wrong_file_loc = os.path.join(current_wd, "testfiles/not_present.tsv")
+test_wrong_file_loc = os.path.join(current_wd, "testfiles/somatic_snvs/not_present.tsv")
 # An empty file
-test_empty_file_loc = os.path.join(current_wd, "testfiles/ex_empty_file.tsv")
+test_empty_file_loc = os.path.join(current_wd, "testfiles/somatic_snvs/ex_empty_file.tsv")
 # A loaded SNV file
-test_loaded_file_loc = os.path.join(current_wd, "testfiles/ex_somatic_snvs_loaded.tsv")
+test_loaded_file_loc = os.path.join(current_wd, "testfiles/somatic_snvs/ex_somatic_snvs_loaded.tsv")
 # A corrupted SNV file
-test_corrupted_file_loc = os.path.join(current_wd, "testfiles/ex_somatic_snvs_loaded_corrupt.tsv")
+test_corrupted_file_loc = os.path.join(current_wd, "testfiles/somatic_snvs/ex_somatic_snvs_loaded_corrupt.tsv")
 # A SNV file with a truncated header
-test_truncated_header_loc = os.path.join(current_wd, "testfiles/ex_somatic_snvs_trunc_header.tsv")
+test_truncated_header_loc = os.path.join(current_wd, "testfiles/somatic_snvs/ex_somatic_snvs_trunc_header.tsv")
 
 class BasicTests(unittest.TestCase):
 

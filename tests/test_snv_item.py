@@ -10,7 +10,7 @@ from mtbparser.snv_utils import SnvHeader
 CURRENT_WD = os.path.dirname(__file__)
 
 # A loaded SNV file
-TEST_LOADED_FILE_LOC = os.path.join(CURRENT_WD, "testfiles/ex_somatic_snvs_loaded.tsv")
+TEST_LOADED_FILE_LOC = os.path.join(CURRENT_WD, "testfiles/somatic_snvs/ex_somatic_snvs_loaded.tsv")
 
 class SnvItemTest(unittest.TestCase):
     """
