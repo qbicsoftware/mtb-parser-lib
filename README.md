@@ -35,6 +35,7 @@ parser = SnvParser(somatic_snv_file, SSnvHeader)
 # Iterate through parsed SNV items and get the gene name
 for snv_item in parser.getSNVs():
     print(snv_item.get_snv_info(SSnvHeader.GENE.name))
+    
 ```
 
 
