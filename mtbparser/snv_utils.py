@@ -1,9 +1,8 @@
 from enum import Enum
 
 class SSnvHeader(Enum):
-    """
-    Enumeration class for the different column types
-    specified in the header of the SNV tsv file.
+    """ Enumeration class for the different column types
+    specified in the header of the somatic SNV tsv file.
     """
     CHR = "chr"
     START = "start"
@@ -20,6 +19,6 @@ class SSnvHeader(Enum):
     HEADER_LEN = 12
 
 class GSnvHeader(Enum):
-    """
-    dsad
+    """ Enumeration class for the different column types
+    specified in the header of the germline SNV tsv file.
     """
