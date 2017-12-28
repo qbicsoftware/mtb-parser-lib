@@ -1,0 +1,2 @@
+# exclude Python cache files
+*.pyc

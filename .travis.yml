@@ -1,3 +1,19 @@
+language: python
+sudo: false
+
+python:
+  - "3.5"
+  - "3.6"
+
+install:
+  - pip install codecov
+
+script: 
+  - nosetests --with-coverage
+
+after_success:
+  - codecov
+
 # safelist
 branches:
   only:

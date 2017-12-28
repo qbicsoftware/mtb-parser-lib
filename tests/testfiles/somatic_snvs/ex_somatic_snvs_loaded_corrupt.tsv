@@ -1,0 +1,3 @@
+chr	start	ref	alt	allele_frequency_tumor	coverage	gene	base_change	aa_change	transcript	functional_class	effect
+chr1	1522	C	A	0.25	10	TP53	g.241T>C	p.Trp26Cys	NM_001143990.1	frameshift_truncation
+chr17	43115763	G	T	0.5	10	BCRA1	c.97G>T		ENSG00000012048	intron_variant	inactivating
