@@ -1,4 +1,4 @@
-# Somatic SNVs
+# Germline SNVs
 Information about the file/information format for somatic SNVs.
 
 ## Structure
@@ -10,8 +10,7 @@ in the header must be specified as followed:
 * [start](#start)
 * [ref](#ref)
 * [alt](#alt)
-* [allele\_frequency\_tumor](#all_f)
-* [coverage](#coverage)
+* [genotype](#genotype)
 * [base_change](#base)
 * [aa_change](#aa)
 * [transcript](#transcript)
@@ -57,21 +56,12 @@ The altered base et this position.
 
 ---
 
-### <a name="all_f"></a>'allele\_frequency\_tumor'
-The allele frequence of the variant in the tumor.
+### <a name="genotype"></a>'genotype'
+The genotype of the variant.
 
 **Example**
 
-``allele_frequency_tumor: 0.25``
-
----
-
-### <a name="coverage"></a>'coverage'
-The read coverage mapped at this position.
-
-**Example**
-
-``coverage: 100``
+``genotype: het``
 
 ---
 
