@@ -8,7 +8,7 @@ Formats for:
 
 * [Somatic SNVs](./somatic_snvs.md)
 * [Somatic CNVs](./cnvs.md)
-* [Somatic structural variants](./somatic_snvs.md)
+* [Somatic structural variants](./structural_variants.md)
 * [Germline SNVs](./germline_snvs.md)
 * [Germline CNVs](./cnvs.md)
 * [Metadata](./metadata.md)
