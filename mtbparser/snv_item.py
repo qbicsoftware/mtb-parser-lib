@@ -13,6 +13,11 @@ class SNVItem():
                 info_dict[key] = "NA"
         return info_dict
 
-    def get_snv_info(self):
-        return self._snv_info
+    def get_snv_info(self, attribute):
+        information = ""
+        try:
+            information = self._snv_info[attribute]
+        except KeyError:
+            pass
+        return information
     
