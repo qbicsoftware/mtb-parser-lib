@@ -8,11 +8,11 @@ A simple module that provides parser for different diagnostic variant informatio
 
 File formats for
 * [Somatic SNVs](./docs/somatic_snvs.md)
-* Somatic CNVs
-* Somatic structural variants
-* Germline SNVs
-* Germline CNVs
-* Metadata
+* [Somatic CNVs](./docs/cnvs.md)
+* [Somatic structural variants](./docs/somatic_snvs.md)
+* [Germline SNVs](./docs/germline_snvs.md)
+* [Germline CNVs](./docs/cnvs.md)
+* [Metadata](./docs/metadata.md)
 
 Python class info
 * SNVParser

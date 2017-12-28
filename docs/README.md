@@ -7,11 +7,11 @@ In total, this module provides parsers for **four** different information format
 Formats for:
 
 * [Somatic SNVs](./somatic_snvs.md)
-* Somatic CNVs
-* Somatic structural variants
-* Germline SNVs
-* Germline CNVs
-* Metadata
+* [Somatic CNVs](./cnvs.md)
+* [Somatic structural variants](./somatic_snvs.md)
+* [Germline SNVs](./germline_snvs.md)
+* [Germline CNVs](./cnvs.md)
+* [Metadata](./metadata.md)
 
 All file formats are **tab separated** (tsv).
 
