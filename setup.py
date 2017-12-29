@@ -4,7 +4,7 @@ setup(
     name='mtbparser',
     version='0.1',
     license='MIT',
-    url='https://github.com/qbicsoftware/qbic.mtbparser'
+    url='https://github.com/qbicsoftware/qbic.mtbparser',
     description='A module that parses different diagnostic variant data.',
     long_description=open('README.md').read(),
     author='Sven Fillinger',
