@@ -14,7 +14,7 @@ setup(
         "Programming Language :: Python",
         "Programming Language :: Python :: 3.4",
         "Programming Language :: Python :: 3.5",
-        "Intended Audience :: Developers in tumor diagnostics",
+        "Intended Audience :: Developers",
         "Topic :: Software Development :: Libraries :: Python Modules",
         "Topic :: Scientific/Engineering :: Bio-Informatics",
         "License :: OSI Approved :: MIT License"
