@@ -49,6 +49,9 @@ This code implementation was done at the [Quantitative Biology Center](http://qb
 
 ## Changelog
 
+### v0.2.1
+Installation with ``pip`` failed, because the DESCRIPTION.rst for the module description was not provided in the sdist package.
+
 ### v0.2
 The first _production-ready_ version of ``mtbparser``, that is also deployed on PyPI. Only updated documentation and proper formatting for PyPI deployment.
 
