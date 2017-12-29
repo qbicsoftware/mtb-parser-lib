@@ -1,3 +1,7 @@
+About this module
+=================
+This Python module was designed to provide a simple parser for different diagnostic variant information data.
+
 How to use the SnvParser class
 ==============================
 
