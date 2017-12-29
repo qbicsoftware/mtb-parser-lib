@@ -43,6 +43,14 @@ for snv_item in parser.getSNVs():
     
 ```
 
-
 ## Author
 This code implementation was done at the [Quantitative Biology Center](http://qbic.life). Please contact the author [@sven1103](https://github.com/sven1103) for more information.
+
+
+## Changelog
+
+### v0.2
+The first _production-ready_ version of ``mtbparser``, that is also deployed on PyPI. Only updated documentation and proper formatting for PyPI deployment.
+
+### v0.1dev
+A first develeopment version, should work, tests are good, coverage > 90%.
