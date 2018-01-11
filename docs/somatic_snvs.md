@@ -12,6 +12,7 @@ in the header must be specified as followed:
 * [alt](#alt)
 * [allele\_frequency\_tumor](#all_f)
 * [coverage](#coverage)
+* [gene](#gene)
 * [base_change](#base)
 * [aa_change](#aa)
 * [transcript](#transcript)
