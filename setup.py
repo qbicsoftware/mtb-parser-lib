@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name='mtbparser',
-    version='0.2.3',
+    version='0.2.4',
     license='MIT',
     url='https://github.com/qbicsoftware/qbic.mtbparser',
     description='A module that parses different diagnostic variant data.',
