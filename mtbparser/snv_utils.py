@@ -73,7 +73,7 @@ class MetaData(Enum):
     specified in the header of the metadata tsv file.
     """
     DIAGNOSIS = "diagnosis"
-    TUMOR_CONTENT = "tumor_contet"
+    TUMOR_CONTENT = "tumor_content"
     PATHOGENIC_GERMLINE = "pathogenic_germline"
     MUTATIONAL_LOAD = "mutational_load"
     CHROMOSOMAL_INSTABILITY = "chromosomal_instability"
