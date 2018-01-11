@@ -15,7 +15,7 @@ class SnvParser:
         self._snv_list = []
         self._snv_enum = snv_enum_type
 
-        with open(snv_file, "r") as fh:
+        with open(snv_file, "r", encoding="utf-8") as fh:
             lines = fh.readlines()
         if not lines:
             raise MTBParserException("Parsing failed: File was empty!")
