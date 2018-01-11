@@ -11,6 +11,7 @@ in the header must be specified as followed:
 * [copy_number](#copynumber)
 * [gene](#gene)
 * [exons](#exons)
+* [transcript](#transcript)
 * [chr](#chr)
 * [start](#start)
 * [end](#end)
@@ -76,6 +77,15 @@ Information about the affected exons of a gene.
 **Example**
 
 ``exons: whole gene``
+
+---
+
+### <a name="transcript"></a>'transcript'
+Transcript reference identifier. Refseq or Ensembl.
+
+**Example**
+
+``transcript: NM_001143990.1``
 
 ---
 
