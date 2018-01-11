@@ -48,6 +48,12 @@ This code implementation was done at the [Quantitative Biology Center](http://qb
 
 
 ## Changelog
+### v0.2.4
+Fixed typo in 'tumor_content' definition in the metadata section.
+
+### v0.2.3
+Just v0.2.2, but had to rename the version on PyPi
+
 ### v0.2.2
 Reading of files failed, because Python expects ACII encoding by default. Now, files are explicitely opened with utf-8 encoding.
 
