@@ -49,6 +49,9 @@ This code implementation was done at the [Quantitative Biology Center](http://qb
 
 ## Changelog
 
+### v0.2.6
+You can now extract a copy of the complete SNV Item information as dictionary.
+
 ### v0.2.5
 Bugfix: parsing of empty first columns failed because of the usage of strip() function. Columns can be empty, if they contain no information, so trimming whitespaces leads to a wrong total column number. We use rstrip() now, to remove escape characters and trailing whitespaces.
 
