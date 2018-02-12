@@ -60,7 +60,7 @@ class SnvParser:
             self._snv_list.append(SNVItem(**info_dict))
     
     def _map_info_to_col(self, line):
-        line_content = line.strip().split("\t")
+        line_content = line.rstrip().split("\t")
         tmp_info_dict = {}
         try:
             for column, index in self._header_to_column_mapping.items():
