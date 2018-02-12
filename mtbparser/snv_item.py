@@ -18,3 +18,6 @@ class SNVItem():
             pass
         return information
     
+    def get_item(self):
+        return dict(self._snv_info)
+    
