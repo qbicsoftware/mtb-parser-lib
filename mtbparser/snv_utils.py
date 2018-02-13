@@ -12,13 +12,13 @@ class SSnvHeader(Enum):
     START = "start"
     REF = "ref"
     ALT = "alt"
-    ALLELE_F_TUMOR = "allele_frequency_tumor"
+    ALLELE_FREQUENCY_TUMOR = "allele_frequency_tumor"
     COVERAGE = "coverage"
     GENE = "gene"
     BASE_CHANGE = "base_change"
     AA_CHANGE = "aa_change"
     TRANSCRIPT = "transcript"
-    FUN_CLASS = "functional_class"
+    FUNCTIONAL_CLASS = "functional_class"
     EFFECT = "effect"
     HEADER_LEN = 12
 
@@ -35,7 +35,7 @@ class GSnvHeader(Enum):
     BASE_CHANGE = "base_change"
     AA_CHANGE = "aa_change"
     TRANSCRIPT = "transcript"
-    FUN_CLASS = "functional_class"
+    FUNCTIONAL_CLASS = "functional_class"
     EFFECT = "effect"
     HEADER_LEN = 11
 
