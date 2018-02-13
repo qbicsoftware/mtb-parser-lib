@@ -37,7 +37,7 @@ class SnvParser:
         for column in header_content:
             for enum_type in self._snv_enum:
                 if column == enum_type.value:
-                    self._header_to_column_mapping[enum_type.value] = counter
+                    self._header_to_column_mapping[enum_type.name] = counter
                     continue
             counter+=1
 
