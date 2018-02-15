@@ -49,6 +49,9 @@ This code implementation was done at the [Quantitative Biology Center](http://qb
 
 ## Changelog
 
+### v0.2.7
+Rename enums, so their names and values are equal.
+
 ### v0.2.6
 You can now extract a copy of the complete SNV Item information as dictionary.
 
